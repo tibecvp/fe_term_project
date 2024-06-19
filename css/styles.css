@@ -129,6 +129,14 @@ nav a {
     font-weight: var(--font-bold);
 }
 
+nav a span {
+    color: var(--first-color);
+}
+
+nav a:hover {
+    color: var(--first-color-light);
+}
+
 nav ul {
     display: flex;
     gap: 1.5rem;
@@ -162,7 +170,6 @@ section img {
     width: 50%;
     max-width: 500px;
     border-radius: 16px;
-    /* box-shadow: var(--shadow-img); */
     filter: drop-shadow(var(--shadow-img));
 }
 
