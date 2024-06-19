@@ -29,6 +29,7 @@
   --h3-font-size: 1rem;
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
 
   /*========== Font weight ==========*/
   --font-regular: 400;
@@ -69,7 +70,6 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -94,8 +94,17 @@ img {
 
 /* Header Styles */
 header {
-    text-align: center;
-    margin: 2rem;
+    background-image: url("../img/hero_img.jpg");
+    height: 15vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+header h1 {
+    right: 24px;
+    bottom: 24px;
+    margin-right: 10vw;
 }
 
 header span {
@@ -108,12 +117,13 @@ nav {
     justify-content: space-between;
 }
 
-nav,
-footer {
+nav {
+    max-width: 1200px;
     border: 1px solid var(--white-color);
     border-radius: 8px;
     padding: 1.5rem;
-    margin: 1.5rem 0;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
     text-align: center;
 }
 
@@ -135,6 +145,7 @@ nav ul {
 /* Main Styles */
 main {
     margin: 0 auto;
+    max-width: 1200px;
 }
 
 /* Section styles */
@@ -148,7 +159,13 @@ section h2 {
 
 /* Footer styles */
 footer {
-    font-size: var(--small-font-size);
+    font-size: var(--smaller-font-size);
+    background-color: var(--black-color);
+    padding: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1200px;
+    border-radius: 8px;
 }
 
 footer a {
