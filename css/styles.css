@@ -30,6 +30,7 @@
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
+  --banner-text-shadow: 2px 2px 2px hsl(228, 6%, 4%);
 
   /*========== Font weight ==========*/
   --font-regular: 400;
@@ -101,10 +102,11 @@ header h1 {
     right: 24px;
     bottom: 24px;
     margin-right: 10vw;
-    text-shadow: 2px 2px 2px var(--black-color);
+    text-shadow: var(--banner-text-shadow);
 }
 
-header span {
+header span,
+.banner span {
     color: var(--first-color);
 }
 
@@ -166,6 +168,11 @@ section:nth-child(even) {
     flex-direction: row-reverse;
 }
 
+section .eyebrow {
+  font-size: 1em;
+  color: var(--first-color-light);
+}
+
 section img {
     width: 50%;
     max-width: 500px;
@@ -197,4 +204,26 @@ footer {
 
 footer a {
     color: var(--first-color-light);
+}
+
+/* Specials Styles */
+/* Banner */
+.banner{
+  display: flex;
+  height: 25vh;
+  background-image: url('../img/specials/banner.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: end;
+} 
+
+.banner h1 {
+  font-size: 2.5em;
+  padding: 0 60px;
+  margin-bottom: 16px;
+  background-color: #ffffffd8;
+  color: var(--container-color);
+  border-radius: 50px;
+  /* text-shadow: var(--banner-text-shadow); */
 }
