@@ -155,6 +155,25 @@ main {
   padding: 2.5rem;
 }
 
+/* Hide tablet and show mobile classes */
+.mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.tablet-desktop {
+  display: none;
+}
+
+.mobile h2 {
+  color: var(--first-color);
+} 
+
+.mobile > div {
+  margin-left: 2em;
+}
+
 /* Section styles */
 section {
   display: flex;
@@ -303,7 +322,7 @@ footer a {
   }
 }
 
-/*=========== STYLES FOR TABLET VIEWPORT ===========*/
+/*=========== STYLES FOR TABLET AND DESKTOP VIEWPORT ===========*/
 @media screen and (min-width: 800px) {
   header {
     justify-content: end;
@@ -341,6 +360,15 @@ footer a {
 
   .highligh {
     max-width: 80%;
+  }
+
+  /* Hide mobile and show tablet classes */
+  .tablet-desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
   }
 
   /* General table styles */
