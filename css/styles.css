@@ -210,6 +210,14 @@ section li {
   margin: 1em 0;
 }
 
+.contact {
+  flex-direction: column;
+}
+
+.contact ul {
+  list-style-type: none;
+}
+
 /* Specials Styles */
 /* Banner */
 .banner {

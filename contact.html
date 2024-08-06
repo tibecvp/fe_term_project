@@ -49,7 +49,63 @@
         </ul>
     </nav>
     <main>
-        <h2>Contact Us PAGE</h2>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Please fill out the form below and we'll get in touch with you as soon as possible.</p>
+    
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Contact Information</legend>
+    
+                    <ul>
+                        <li>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required autofocus>
+                        </li>
+                        <li>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        </li>
+                        <li>
+                            <label for="phone">Phone:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                        </li>
+                        <li>
+                            <label for="contact-method">Preferred Contact Method:</label>
+                            <input type="radio" id="email-method" name="contact-method" value="email" required>
+                            <label for="email-method">Email</label>
+                            <input type="radio" id="phone-method" name="contact-method" value="phone">
+                            <label for="phone-method">Phone</label>
+                        </li>
+                        <li>
+                            <label for="inquiry">Type of Inquiry:</label>
+                            <select id="inquiry" name="inquiry">
+                                <option value="product">Product Information</option>
+                                <option value="support">Customer Support</option>
+                                <option value="sales">Sales</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="message">Your Message:</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Type your message here" required></textarea>
+                        </li>
+                        <li>
+                            <label for="newsletter">Subscribe to our newsletter:</label>
+                            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                            <label for="newsletter">Yes, sign me up!</label>
+                        </li>
+                        <li>
+                            <label for="preferred-date">Preferred Contact Date:</label>
+                            <input type="date" id="preferred-date" name="preferred-date">
+                        </li>
+                    </ul>
+    
+                    <button type="submit">Submit Request</button>
+                    <button type="reset">Reset Form</button>
+                </fieldset>
+            </form>
+        </section>
     </main>
     <footer>
         <p>
